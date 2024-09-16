@@ -1,0 +1,31 @@
+{
+    "schema": "olm.bundle",
+    "name": "nginx.v1.26.2",
+    "package": "nginx",
+    "image": "quay.io/nschiede/olm-nginx:v1.26.2",
+    "properties": [
+        {
+            "type": "olm.package",
+            "value": {
+                "packageName": "nginx",
+                "version": "1.26.2"
+            }
+        },
+        {
+            "type": "olm.bundle.object",
+            "value": {
+                "data": "eyJhcGlWZXJzaW9uIjoib3BlcmF0b3JzLmNvcmVvcy5jb20vdjFhbHBoYTEiLCJraW5kIjoiQ2x1c3RlclNlcnZpY2VWZXJzaW9uIiwibWV0YWRhdGEiOnsiYW5ub3RhdGlvbnMiOnsiY2FwYWJpbGl0aWVzIjoiRnVsbCBMaWZlY3ljbGUiLCJzdXBwb3J0IjoiZmFsc2UifSwibmFtZSI6Im5naW54LnYxLjI2LjIifSwic3BlYyI6eyJjbGVhbnVwIjp7ImVuYWJsZWQiOmZhbHNlfSwiZGVzY3JpcHRpb24iOiJOZ2lueCB0ZXN0IGV4dGVuc2lvbi4iLCJkaXNwbGF5TmFtZSI6Ik5naW54IiwiaW5zdGFsbCI6eyJzcGVjIjp7ImNsdXN0ZXJQZXJtaXNzaW9ucyI6W10sImRlcGxveW1lbnRzIjpbeyJuYW1lIjoibmdpbngiLCJzcGVjIjp7InJlcGxpY2FzIjoxLCJzZWxlY3RvciI6eyJtYXRjaExhYmVscyI6eyJhcHAua3ViZXJuZXRlcy5pby9uYW1lIjoibmdpbngifX0sInRlbXBsYXRlIjp7Im1ldGFkYXRhIjp7ImxhYmVscyI6eyJhcHAua3ViZXJuZXRlcy5pby9uYW1lIjoibmdpbngifX0sInNwZWMiOnsiY29udGFpbmVycyI6W3siaW1hZ2UiOiJyZWdpc3RyeS5odWIuZG9ja2VyLmNvbS9uZ2lueDoxLjI2LjIiLCJuYW1lIjoibWFuYWdlciJ9XSwic2VydmljZUFjY291bnROYW1lIjoibmdpbngifX19fV0sInBlcm1pc3Npb25zIjpbeyJydWxlcyI6W3siYXBpR3JvdXBzIjpbIiJdLCJyZXNvdXJjZXMiOlsiZXZlbnRzIl0sInZlcmJzIjpbImNyZWF0ZSJdfSx7ImFwaUdyb3VwcyI6WyJjb29yZGluYXRpb24uazhzLmlvIl0sInJlc291cmNlcyI6WyJsZWFzZXMiXSwidmVyYnMiOlsiZ2V0IiwibGlzdCIsIndhdGNoIiwiY3JlYXRlIiwidXBkYXRlIiwicGF0Y2giLCJkZWxldGUiXX1dLCJzZXJ2aWNlQWNjb3VudE5hbWUiOiJuZ2lueCJ9XX0sInN0cmF0ZWd5IjoiZGVwbG95bWVudCJ9LCJpbnN0YWxsTW9kZXMiOlt7InN1cHBvcnRlZCI6dHJ1ZSwidHlwZSI6IkFsbE5hbWVzcGFjZXMifV0sImtleXdvcmRzIjpbImludGVncmF0aW9uLXRlc3QiXSwibGlua3MiOltdLCJtYWludGFpbmVycyI6W10sIm1hdHVyaXR5IjoiYWxwaGEiLCJwcm92aWRlciI6e30sInZlcnNpb24iOiIxLjI2LjIifX0="
+            }
+        }
+    ],
+    "relatedImages": [
+        {
+            "name": "",
+            "image": "quay.io/nschiede/olm-nginx:v1.26.2"
+        },
+        {
+            "name": "",
+            "image": "registry.hub.docker.com/nginx:1.26.2"
+        }
+    ]
+}

@@ -1,0 +1,6 @@
+name: torture
+repo: quay.io/nschiede/olm-torture
+tag: latest
+references:
+- name: nginx
+  image: quay.io/nschiede/olm-nginx:v1.26.2

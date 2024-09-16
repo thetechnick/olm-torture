@@ -1,0 +1,65 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: ClusterServiceVersion
+metadata:
+  annotations:
+    support: "false"
+    capabilities: Full Lifecycle
+  name: nginx.v1.26.2
+spec:
+  description: |-
+    Nginx test extension.
+  displayName: Nginx
+  keywords:
+  - integration-test
+  maintainers: []
+  maturity: alpha
+  provider: {}
+  links: []
+  version: 1.26.2
+  cleanup: # ToDo: check.
+    enabled: false
+  installModes:
+  - supported: true
+    type: AllNamespaces
+  install:
+    strategy: deployment
+    spec:
+      clusterPermissions: []
+      permissions:
+      - rules:
+          - apiGroups:
+              - ""
+            resources:
+              - events
+            verbs:
+              - create
+          - apiGroups:
+              - coordination.k8s.io
+            resources:
+              - leases
+            verbs:
+              - get
+              - list
+              - watch
+              - create
+              - update
+              - patch
+              - delete
+        serviceAccountName: nginx
+      deployments:
+      - name: nginx
+        spec:
+          replicas: 1
+          selector:
+            matchLabels:
+              app.kubernetes.io/name: nginx
+          template:
+            metadata:
+              labels:
+                app.kubernetes.io/name: nginx
+            spec:
+              serviceAccountName: nginx
+              containers:
+              - name: manager
+                image: registry.hub.docker.com/nginx:1.26.2
+
